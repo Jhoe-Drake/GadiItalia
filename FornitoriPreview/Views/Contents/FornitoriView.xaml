@@ -14,7 +14,7 @@
                 <DataGridTextColumn Header="Rag. Sociale"  Binding="{Binding RagioneSociale}" />
                 <DataGridTextColumn Header="Nome Interno" Binding="{Binding NomeInterno}" />
                 <DataGridTextColumn Header="Responsabile" Binding="{Binding Responsabile.Description}" />
-                <DataGridTextColumn Header="Indirizzo" Binding="{Binding SedeLegale.Address}" />
+                <DataGridTextColumn Header="Indirizzo" Binding="{Binding SedeLegale.Indirizzo}" />
                 <DataGridTextColumn Header="Località" Binding="{Binding SedeLegale.City}" />
                 <DataGridTextColumn Header="CAP" Binding="{Binding SedeLegale.CAP}" />
             </DataGrid.Columns>
