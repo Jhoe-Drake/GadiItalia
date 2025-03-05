@@ -92,6 +92,7 @@ namespace FornitoriApp
             if (!Directory.Exists(Path.Combine(assetPath, Constants.TempPdfFolderName)))
                 Directory.CreateDirectory(Path.Combine(assetPath, Constants.TempPdfFolderName));
 
+            ClearTempDir(assetPath);
         }
 
         private void RegisterViews(AppBootstrapper bootstrapper)
@@ -127,6 +128,17 @@ namespace FornitoriApp
 
 
 
+        }
+        private void ClearTempDir(string assetPath)
+        {
+            var files = Directory.GetFiles(Path.Combine(assetPath, Constants.TempPdfFolderName));
+            foreach (var file in files)
+            {
+                if (File.Exists(file))
+                {
+                    File.Delete(file);
+                }
+            }
         }
     }
 }
