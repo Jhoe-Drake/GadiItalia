@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drk.Core", "DrkCore\Drk.Core.csproj", "{98C3B501-05CD-40E3-9BB0-787E019F49BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drk.DAL", "DRK.DAL\Drk.DAL.csproj", "{63E99C11-CC7E-448B-A93A-DBD079E15344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FornitoriPreview", "FornitoriPreview\FornitoriPreview.csproj", "{5269DB32-6A23-41E1-8E16-AB9840E07426}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C3B501-05CD-40E3-9BB0-787E019F49BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C3B501-05CD-40E3-9BB0-787E019F49BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C3B501-05CD-40E3-9BB0-787E019F49BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C3B501-05CD-40E3-9BB0-787E019F49BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E99C11-CC7E-448B-A93A-DBD079E15344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E99C11-CC7E-448B-A93A-DBD079E15344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E99C11-CC7E-448B-A93A-DBD079E15344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E99C11-CC7E-448B-A93A-DBD079E15344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5269DB32-6A23-41E1-8E16-AB9840E07426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5269DB32-6A23-41E1-8E16-AB9840E07426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5269DB32-6A23-41E1-8E16-AB9840E07426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5269DB32-6A23-41E1-8E16-AB9840E07426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

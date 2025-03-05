@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5874bbfd4e0f4e74aa2713c99fa18ad9" Name="Diagram1" ZoomLevel="101">
+        <EntityTypeShape EntityType="GadiItaliaModel.AccountEmailGadis" Width="1.5" PointX="1.5" PointY="179.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.AliasAccountGadis" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.AreeGadis" Width="1.5" PointX="3.75" PointY="179.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Banche" Width="1.5" PointX="17" PointY="208.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Camere" Width="1.5" PointX="28.25" PointY="208.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Canali" Width="1.5" PointX="22.25" PointY="240.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristicheCamere" Width="1.5" PointX="17" PointY="174.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristicheCliente" Width="1.5" PointX="21.5" PointY="218.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristicheFornitore" Width="1.5" PointX="17" PointY="179.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristichePratica" Width="1.5" PointX="41.25" PointY="208.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristicheServizio" Width="1.5" PointX="51.75" PointY="187.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CaratteristicheStruttura" Width="1.5" PointX="17" PointY="162.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Cataloghi" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Categorie" Width="1.5" PointX="15.5" PointY="187" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CategorieMessaggi" Width="1.5" PointX="23.25" PointY="188.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CausaliAnnullamentoPratiche" Width="1.5" PointX="36.75" PointY="214.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CausaliLamentele" Width="1.5" PointX="39" PointY="203.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Clienti" Width="1.5" PointX="19.25" PointY="210.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ClientiAnno" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ClientiAnnoSegmentiMarketing" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ClientiArchivioNote" Width="1.5" PointX="21.5" PointY="223.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ClientiCondizioniPagamento" Width="1.5" PointX="8.25" PointY="189.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ClientiTipiCamera" Width="1.5" PointX="24.5" PointY="217" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CollezioniImmagini" Width="1.5" PointX="8.25" PointY="197.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ComuniAnagrafe" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ComuniCodiciPostali" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CondizioniPagamento" Width="1.5" PointX="3" PointY="189.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.CondizioniPagamentoCliente" Width="1.5" PointX="5.25" PointY="200.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Contatti" Width="1.5" PointX="24.5" PointY="220.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ContattiCliente" Width="1.5" PointX="21.5" PointY="227.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ContattiFornitore" Width="1.5" PointX="17" PointY="213.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.DateAggiuntivePerSerie" Width="1.5" PointX="41.25" PointY="211.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Destinazioni" Width="1.5" PointX="6" PointY="183.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.DettagliFornitori" Width="1.5" PointX="20.75" PointY="187.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.DisponibilitaFornitore" Width="1.5" PointX="25.25" PointY="213.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Documenti" Width="1.5" PointX="12.25" PointY="196.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ElementiOfferta" Width="1.5" PointX="51.75" PointY="196.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ElementiOffertaTipiCamera" Width="1.5" PointX="60" PointY="206.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ElementiOrdine" Width="1.5" PointX="54.75" PointY="197.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ElementiOrdineTipiCamera" Width="1.5" PointX="60" PointY="210.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ElenchiCommercialiServizi" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Eventi" Width="1.5" PointX="0.75" PointY="183.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FattureClienti" Width="1.5" PointX="41.25" PointY="217.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FattureFornitori" Width="1.5" PointX="44.25" PointY="208.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FeedbackCliente" Width="1.5" PointX="22.5" PointY="209.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FeedbackClienteServizi" Width="1.5" PointX="27.75" PointY="211.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Fornitori" Width="1.5" PointX="14.75" PointY="190" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriAnnoTariffe" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriArchivioNote" Width="1.5" PointX="17" PointY="220.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriCondizioniPagamento" Width="1.5" PointX="8.25" PointY="184.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriDettagli" Width="1.5" PointX="23" PointY="199" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriGuideAccompagnatori" Width="1.5" PointX="17" PointY="226.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriLocaliPubblici" Width="1.5" PointX="17" PointY="228.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriTrasportatori" Width="1.5" PointX="17" PointY="231.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FornitoriValutazioni" Width="1.5" PointX="23" PointY="202.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Funzioni" Width="1.5" PointX="5.25" PointY="218.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.FunzioniGO" Width="1.5" PointX="7.5" PointY="218.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.GiornateOfferta" Width="1.5" PointX="43.5" PointY="239.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.GiornateOffertaPosiz" Width="1.5" PointX="45.75" PointY="239" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.GiornateOrdine" Width="1.5" PointX="41.25" PointY="224.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.GiornateOrdinePosiz" Width="1.5" PointX="43.5" PointY="224.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Gratuita" Width="1.5" PointX="7.5" PointY="201.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.GratuitaCondizioni" Width="1.5" PointX="9.75" PointY="203.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Gruppi" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Immagini" Width="1.5" PointX="10.5" PointY="215.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Iva" Width="1.5" PointX="49.5" PointY="206.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.IvaStorica" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Lamentele" Width="1.5" PointX="41.25" PointY="201.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Lingue" Width="1.5" PointX="17" PointY="240.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.LivelliDestinazione" Width="1.5" PointX="3.75" PointY="195.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.LivelliUtente" Width="1.5" PointX="3" PointY="206" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Lock" Width="1.5" PointX="7.5" PointY="209.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Log" Width="1.5" PointX="7.5" PointY="211.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Manifestazioni" Width="1.5" PointX="22.25" PointY="250.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Messaggi" Width="1.5" PointX="25.5" PointY="204.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.MessaggiDestinatari" Width="1.5" PointX="28.75" PointY="204" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.MessaggiEliminati" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.MessaggiEliminatiDestinatari" Width="1.5" PointX="8" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.MezziPagamento" Width="1.5" PointX="0.75" PointY="196.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Moduli" Width="1.5" PointX="3" PointY="219" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Nazioni" Width="1.5" PointX="21.5" PointY="246" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Note" Width="1.5" PointX="44.25" PointY="203.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Offerte" Width="1.5" PointX="41.25" PointY="239.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OffertePubbliche" Width="1.5" PointX="57.75" PointY="198" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OfferteTotali" Width="1.5" PointX="43.5" PointY="242.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OfferteTotaliSezioni" Width="1.5" PointX="45.75" PointY="243.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Operatori" Width="1.5" PointX="5.25" PointY="205.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OperatoriAccountEmail" Width="1.5" PointX="10.5" PointY="209.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OperatoriFunzioni" Width="1.5" PointX="10.5" PointY="212.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Opportunita" Width="1.5" PointX="33.75" PointY="208.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OrdiniTotali" Width="1.5" PointX="41.25" PointY="246.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OrdiniTotaliSezioni" Width="1.5" PointX="48.75" PointY="233.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.OriginiClienti" Width="1.5" PointX="17" PointY="223.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PagamentiRicevuti" Width="1.5" PointX="13.5" PointY="211.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PagamentiRicevutiRighe" Width="1.5" PointX="27.5" PointY="215" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Parametri" Width="1.5" PointX="7.5" PointY="225.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Partecipanti" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Pratiche" Width="1.5" PointX="39" PointY="207.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PratichePagamentiCliente" Width="1.5" PointX="11.25" PointY="188.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PratichePagamentiFornitori" Width="1.5" PointX="11.25" PointY="180" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PraticheSistemazioni" Width="1.5" PointX="30.75" PointY="208.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PraticheSistemazioniTipiCamera" Width="1.5" PointX="36" PointY="211" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PraticheTag" Width="1.5" PointX="41.25" PointY="249.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ProprietaStili" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Province" Width="1.5" PointX="29" PointY="220.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.PuntiDestinazione" Width="1.5" PointX="8.25" PointY="256" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Regioni" Width="1.5" PointX="26.75" PointY="220.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.RichDisp" Width="1.5" PointX="31.75" PointY="204.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.RichForn" Width="1.5" PointX="28.75" PointY="198.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.RichFornServizi" Width="1.5" PointX="31" PointY="199.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.RiferimentiFornitore" Width="1.5" PointX="17" PointY="244.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_Aree" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_AreeSegmentiMarketing" Width="1.5" PointX="11.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_AreeTipiServizio" Width="1.5" PointX="8.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_Clienti" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_ClientiSegmentiMarketing" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_ClientiTipiServizio" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_Destinazioni" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_Fornitori" Width="1.5" PointX="13.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_FornitoriTipiServizio" Width="1.75" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_SegmentiMarketing" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.S_TipiServizio" Width="1.5" PointX="15.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Scadenze" Width="1.5" PointX="20" PointY="196.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ScaglioniSezioneOfferta" Width="1.5" PointX="45.75" PointY="233.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ScaglioniSezioneOrdine" Width="1.5" PointX="48.75" PointY="247.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.SediGadis" Width="1.5" PointX="3" PointY="208.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.SegmentiMarketing" Width="1.5" PointX="47.25" PointY="207.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Servizi" Width="1.5" PointX="49.5" PointY="195" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Servizi_TEMP" Width="1.5" PointX="23" PointY="191.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Servizi2" Width="1.5" PointX="26" PointY="196.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.ServiziFornitoriAnno" Width="1.5" PointX="51.75" PointY="218" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.SezioniCatalogo" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.SezioniOfferta" Width="1.5" PointX="43.5" PointY="217.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.SezioniOrdine" Width="1.5" PointX="46.5" PointY="220.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.StatiElementoOrdine" Width="1.5" PointX="52.5" PointY="221.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.StatiPratica" Width="1.5" PointX="36.75" PointY="217.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Stili" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Stringhe" Width="1.5" PointX="0.75" PointY="187.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.StringheLingue" Width="1.5" PointX="22.25" PointY="214.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TagPratiche" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TagPratichePratica" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TasseSoggiorno" Width="1.5" PointX="17.5" PointY="191.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TasseSoggiornoRighe" Width="1.5" PointX="19.75" PointY="192.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiAttivita" Width="1.5" PointX="21.5" PointY="237.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiCamera" Width="1.5" PointX="3" PointY="213.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiDocumento" Width="1.5" PointX="10" PointY="174.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiDocumentoModelli" Width="1.5" PointX="19.25" PointY="240.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiFornitore" Width="1.5" PointX="17" PointY="263.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiScadenza" Width="1.5" PointX="17.75" PointY="188.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipiServizio" Width="1.5" PointX="17.75" PointY="197" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.TipoRichForn" Width="1.5" PointX="26.5" PointY="193.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.UsiDocumento" Width="1.5" PointX="46.5" PointY="212.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.UsiImmagine" Width="1.5" PointX="20" PointY="204.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.UsiStringa" Width="1.5" PointX="60.25" PointY="200.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Valute" Width="1.5" PointX="19.25" PointY="251.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.VariantiLogisticheServizio" Width="1.5" PointX="54.75" PointY="192.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.VariantiPrezziFornitoriAnnoTariffe" Width="1.5" PointX="16.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.VariantiPrezziServizioFornitoreAnno" Width="1.5" PointX="57" PointY="202.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.VersioniSoftware" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.AreeAnno" Width="1.5" PointX="8.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.AreeAnnoSegmentiMarketing" Width="1.5" PointX="16.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.DestinazioniImport" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_attivita_relazioni" Width="1.5" PointX="17.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_attivita_segmenti" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Dizionario_Servizi_Fornitori_Passo2" Width="1.5" PointX="2.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Dizionario_Servizi_NoName_Passo2" Width="1.5" PointX="4.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_GO4_Fornitori_SchedePrezzi_Fornitori_Passo2" Width="1.5" PointX="18.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_GO4_Fornitori_SchedePrezzi_Passo2" Width="1.5" PointX="10.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_GO4_Fornitori_SchedePrezzi_VariantiPrezzi_DaInserire" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_GO4_Fornitori_SchedePrezzi_VariantiPrezzi_Nuovi" Width="1.5" PointX="12.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_GO4_Fornitori_SchedePrezziLingue_Aggiornati_Dizionario_Base" Width="1.5" PointX="19.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_DocumentiCreati" Width="1.5" PointX="14.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_DocumentiRicevuti" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_ElementiOfferta_DaAggiungere" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_ElementiOrdini_DaAggiungere" Width="1.5" PointX="6.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_OfferteSezioni" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_Servizi_Connessione" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GadiItaliaModel.Z_Sincro_Pratiche_Servizi_Dettaglio" Width="1.5" PointX="20.75" PointY="17.75" IsExpanded="true" />
+        <AssociationConnector Association="GadiItaliaModel.FK_AccountMailOperatori_AccountMail" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_AreeGadis_AccountEmailGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Operatori_AccountMailEst" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Operatori_AccountMailInt" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_AreeGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OffertePubbliche_AreeGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Operatori_AreeGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Opportunita_AreeGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_AreeGadis" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Banche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PagamentiRicevuti_Banche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PagamentiRicevutiRighe_Banche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Camere_FornitoriValutazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Camere_TipiCamera" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Contatti_Canali" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristicheCamere_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristicheCliente_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristicheFornitore_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristichePratica_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristicheServizio_Servizio" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CaratteristicheStruttura_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiServizio_Categorie" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Messaggi_CategorieMessaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_CausaliAnnullamentoPratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_CausaliLamentele" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Clienti1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Clienti2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Nazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_OriginiClienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Clienti_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ClientiArchivioNote_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ClientiTipiCamera_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamentoCliente_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Contatti_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ContattiCliente_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Clienti1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FattureClienti_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_MessaggiDestinatari_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Messaggio_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Note_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PagamentiRicevutiRighe_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Clienti1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Clienti2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamenti_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ClientiCondizioniPagamento_Eventi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ClientiCondizioniPagamento_MezziPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamentoCliente_TipiPagamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ClientiTipiCamera_TipiCamera" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CollezioniImmagini_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CollezioniImmagini_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CollezioniImmagini_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Immagini_CollezioniImmagini" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniFornitore_CondizioniPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamento_Eventi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamento_MezziPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamento_Stringhe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniPagamentoCliente_TipiPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamenti_CondizioniPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_CondizioniPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Contatti_Manifestazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Contatti_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Opportunita_Contatti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_ContattiCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_ContattiCliente1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_ContattiCliente2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RiferimentoFornitore_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DateAggiuntivePerSerie_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazione_CodDestinazioneStatistica" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Livelli" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Nazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Regioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_Stringhe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_TasseSoggiorno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_ToTraduzioni_1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_ToTraduzioni_2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Destinazioni_ToTraduzioni_3" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitore_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Note_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Opportunita_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratica_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PuntiDestinazione_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Regioni_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_Destinazione_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio2_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiImmagine_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriDettagli_DettagliFornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DisponibilitaFornitore_FornitoriValutazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Fornitori1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Documenti_TipiDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FeedbackCliente_Documenti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_Documenti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Fornitori1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Iva" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Iva1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_SezioniOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOfferta_VariantiPrezziServizioFornitoreAnno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOffertaTipiCamera_ElementiOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOffertaPosiz_ElementiOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_ElementiOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiImmagine_ElementiOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOffertaTipiCamera_TipiCamera" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Fornitori1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Iva" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Iva1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_SezioniOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_StatiElementoOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdine_VariantiPrezziServizioFornitoreAnno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdineTipiCamera_ElementiOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FeedbackClienteServizi_ElementiOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOrdinePosiz_ElementiOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_ElementiOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiImmagine_ElementiOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiOrdineTipiCamera_TipiCamera" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriCondizioniPagamento_Eventi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiCliente_Eventi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_Eventi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FattureClienti_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FatturaFornitore_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FattureFornitori_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FeedbackCliente_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FeedbackClienteServizi_FeedbackCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_CondizioniFornitore_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitore_aggregazione_fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Fatturazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Intermediari" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_OperatoreCreazione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_OperatoreUltimaModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Traduzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Traduzioni1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Fornitori_Valute" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriArchivioNote_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriDettagli_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriValutazioni_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GuidaAccompagnatore_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_LocalePubblico_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_MessaggiDestinatari_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Messaggio_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichDispFornitore_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RiferimentiFornitore_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizi_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizi_Fornitori_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizi2_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_Fornitore_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio2_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Trasportatore_Fornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiImmagine_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriCondizioniPagamento_MezziPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FornitoriValutazioni_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ControlliForm_Funzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Funzioni_Moduli" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FunzioniOperatori_Funzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Log_Funzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOfferta_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOffertaPosiz_GiornateOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOrdine_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GiornateOrdinePosiz_GiornateOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Gratuita_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_GratuitaCondizioni_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratica_Gratuità" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SezioniOfferta_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SezioniOrdine_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiServizio_Gratuita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Partecipanti_Gruppi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsoImmagine_Immagine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiPrezziServizioFornitoreAnno_Iva" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiPrezziServizioFornitoreAnno_Iva1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Operatori1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lamentele_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Lamentele" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiTraduzioni_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Nazione_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiDocumentoModelli_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Valuta_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Operatori_LivelliUtente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Lock_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Log_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Messaggi_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_MessaggiDestinatari_Messaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Messaggio_Operatore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticheSistemazioni_Messaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichDisp_Messaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichDispFornitori_Messaggi1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichForn_Messaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_MessaggiEliminatiDestinatari_MessaggiEliminati" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiCliente_MezziPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_MezziPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Nazione_Valute" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Regioni_Nazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Note_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Note_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Offerte_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OfferteTotali_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SezioniOfferta_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SezioniOrdine_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Offerte" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OffertePubbliche_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OfferteTotaliSezioni_OfferteTotali" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OfferteTotaliSezioni_SezioniOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_AccountMailOperatori_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_FunzioniOperatori_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Operatori_Sedi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Opportunita_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PagamentiRicevuti_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Parametri_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratica_Operatore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Operatori1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizi_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizi2_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TasseSoggiorno_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiServizio_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Opportunita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Opportunita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OrdiniTotali_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OrdiniTotaliSezioni_OrdiniTotali" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_OrdiniTotaliSezioni_SezioniOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PagamentiRicevutiRighe_PagamentiRicevuti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamenti_PagamentiRicevutiRighe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticaSistemazioni_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_StatiPratica" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_StatiPratica1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Pratiche_Valute" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamenti_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PratichePagamentiFornitori_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticheTag_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichDisp_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichDispFornitore_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SezioniOrdine_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Pratiche" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_PratichePagamentiCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_PratichePagamentiFornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticaSistemazioniTipoCamera_PraticaSistemazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticheSistemazioni_StatiPratica" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_PraticaSistemazioniTipoCamera_TipiCamera" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ProprietaStili_Stili" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Province_Regioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichForn_TipoRichForn" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_RichFornServizi_RichForn" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Scadenze_TipiScadenza" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ScaglioniSezioneOfferta_SezioniOfferta" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ScaglioniSezioneOrdine_SezioniOrdine" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SediGadis_Stringhe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_SediGadis_Stringhe1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneBreve_Traduzione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneEstesa_Traduzione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherCliente_Traduzione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherFornitore_Traduzione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ServiziFornitoriAnno_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_TipoServizio" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiDocumento_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiImmagine_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiLogisticheServizio_Servizi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneBreve_Traduzione_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneEstesa_Traduzione_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherCliente_Traduzione_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherFornitore_Traduzione_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio_TipoServizio_TEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneBreve_Traduzione2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_DescizioneEstesa_Traduzione2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherCliente_Traduzione2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_NoteVoucherFornitore_Traduzione2" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Servizio2_TipoServizio" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiPrezziServizioFornitoreAnno_ServiziFornitoriAnno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Descrizione_Traduzione" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_ElementiTraduzioni_Traduzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TasseSoggiorno_Stringhe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TasseSoggiorno_Stringhe1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiCamera_Traduzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_Traduzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiLogisticheServizio_Stringhe" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiLogisticheServizio_Stringhe1" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiPrezziServizioFornitoreAnno_NoteClienti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_VariantiPrezziServizioFornitoreAnno_NoteFornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_Voucher_Traduzioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TasseSoggiornoRighe_TasseSoggiorno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_TasseSoggiorno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_TipiDocumentoModelli_TipiDocumentoModelli" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FK_UsiStringa_VariantePrezzoServizioFornitoreAnno" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.ClientiSegmentiMarketing" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.ClientiTipiAttivita" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.DestinazioniRelazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.DocumentiMessaggi" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FornitoriLingue" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FornitoriSegmentiMarketing" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.FornitoriTipiFornitore" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.OpportunitaSegmentiMarketing" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.PraticheSegmentiMarketing" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.RelazioniTipiServizio" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.ServiziRaggruppamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="GadiItaliaModel.ServiziSegmentiMarketing" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

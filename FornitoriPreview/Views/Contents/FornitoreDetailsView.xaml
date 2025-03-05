@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="FornitoriApp.Views.FornitoreDetailsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FornitoriApp.Views"
+             xmlns:localize="clr-namespace:FornitoriApp.Properties"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             d:DesignHeight="450" d:DesignWidth="800" Background="DarkGray">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Anteprima">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" Margin="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                                <Label Content="Language" />
+                                <ComboBox Margin="5"  Width="80"  DisplayMemberPath="Description" 
+                                          ItemsSource="{Binding Languages, UpdateSourceTrigger=PropertyChanged}" 
+                                          SelectedItem="{Binding SelectedLanguage, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                            
+                            <Border Grid.Row="1" Margin="15" BorderThickness="2" BorderBrush="Black" CornerRadius="15">
+                                <Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="5">
+                                    <StackPanel Orientation="Vertical">
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding CodiceFornitoreText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.Id, UpdateSourceTrigger=PropertyChanged}"/>
+                                            <Separator Width="10" BorderBrush="Transparent"  />
+                                            <Label  Content="{Binding StatoText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.IsActive, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+                                        
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding NomeFornitoreText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.RagioneSociale, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding NomeInternoText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.NomeInterno, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding ResponsabileText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.Responsabile.Description, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding IndirizzoText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.SedeLegale.Indirizzo, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding ComuneText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.SedeLegale.City, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding CAPText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.SedeLegale.CAP, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5" >
+                                            <Label  Content="{Binding ProvinciaText, UpdateSourceTrigger=PropertyChanged}" Margin="5,0"/>
+                                            <Label  Content="{Binding Fornitore.SedeLegale.Provincia, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </Grid>
+                            </Border>
+                            
+                        </Grid>
+                    </Border>
+                    <GroupBox Grid.Column="1" Header="Anteprima di Stampa" Padding="5">
+                        <WebBrowser x:Name="pdfViewer"  />
+                    </GroupBox>
+                </Grid>
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

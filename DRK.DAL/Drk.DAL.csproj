@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63E99C11-CC7E-448B-A93A-DBD079E15344}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Drk.DAL</RootNamespace>
+    <AssemblyName>Drk.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.5.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.29.3.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.29.3\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.2\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.2\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.9.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.2\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.5.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.5\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountEmailGadis.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AliasAccountGadis.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AreeAnno.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AreeAnnoSegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AreeGadis.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banche.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Camere.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Canali.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristicheCamere.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristicheCliente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristicheFornitore.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristichePratica.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristicheServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaratteristicheStruttura.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cataloghi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Categorie.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategorieMessaggi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CausaliAnnullamentoPratiche.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CausaliLamentele.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clienti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiAnno.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiAnnoSegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiArchivioNote.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiCondizioniPagamento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiTipiCamera.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollezioniImmagini.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComuniAnagrafe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComuniCodiciPostali.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CondizioniPagamento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CondizioniPagamentoCliente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contatti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContattiCliente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContattiFornitore.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DateAggiuntivePerSerie.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Destinazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DestinazioniImport.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DettagliFornitori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DisponibilitaFornitore.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElementiOfferta.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElementiOffertaTipiCamera.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElementiOrdine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElementiOrdineTipiCamera.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElenchiCommercialiServizi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElencoDestinazioniFiglie_Result.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityManager.cs" />
+    <Compile Include="Eventi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FattureClienti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FattureFornitori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackCliente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackClienteServizi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fornitori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriAnnoTariffe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriArchivioNote.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriCondizioniPagamento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriDettagli.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriGuideAccompagnatori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriLocaliPubblici.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriTrasportatori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FornitoriValutazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Funzioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FunzioniGO.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GadiItaliaEFModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GadiItaliaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GadiItaliaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GadiItaliaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GadiItaliaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GadiItaliaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GadiItaliaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GiornateOfferta.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GiornateOffertaPosiz.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GiornateOrdine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GiornateOrdinePosiz.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gratuita.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GratuitaCondizioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gruppi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Immagini.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Iva.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IvaStorica.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lamentele.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lingue.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LivelliDestinazione.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LivelliUtente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lock.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manifestazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessaggiDestinatari.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessaggiEliminati.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessaggiEliminatiDestinatari.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MezziPagamento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moduli.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Note.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offerte.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OffertePubbliche.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfferteTotali.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfferteTotaliSezioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Operatori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatoriAccountEmail.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatoriFunzioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Opportunita.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdiniTotali.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdiniTotaliSezioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OriginiClienti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagamentiRicevuti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagamentiRicevutiRighe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parametri.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Partecipanti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pratiche.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PratichePagamentiCliente.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PratichePagamentiFornitori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PraticheSistemazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PraticheSistemazioniTipiCamera.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PraticheTag.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProprietaStili.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Province.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PuntiDestinazione.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Regioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository.cs" />
+    <Compile Include="RichDisp.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichForn.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichFornServizi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiferimentiFornitore.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Scadenze.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScaglioniSezioneOfferta.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScaglioniSezioneOrdine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SediGadis.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Servizi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Servizi2.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiziFornitoriAnno.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Servizi_TEMP.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SezioniCatalogo.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SezioniOfferta.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SezioniOrdine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatiElementoOrdine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatiPratica.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stili.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stringhe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StringheLingue.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_Aree.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_AreeSegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_AreeTipiServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_Clienti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_ClientiSegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_ClientiTipiServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_Destinazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_Fornitori.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_FornitoriTipiServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_SegmentiMarketing.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_TipiServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TagPratiche.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TagPratichePratica.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TasseSoggiorno.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TasseSoggiornoRighe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiAttivita.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiCamera.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiDocumento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiDocumentoModelli.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiFornitore.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiScadenza.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipiServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoRichForn.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsiDocumento.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsiImmagine.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsiStringa.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Valute.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariantiLogisticheServizio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariantiPrezziFornitoriAnnoTariffe.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariantiPrezziServizioFornitoreAnno.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersioniSoftware.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_attivita_relazioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_attivita_segmenti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Dizionario_Servizi_Fornitori_Passo2.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Dizionario_Servizi_NoName_Passo2.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_GO4_Fornitori_SchedePrezziLingue_Aggiornati_Dizionario_Base.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_GO4_Fornitori_SchedePrezzi_Fornitori_Passo2.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_GO4_Fornitori_SchedePrezzi_Passo2.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_GO4_Fornitori_SchedePrezzi_VariantiPrezzi_DaInserire.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_GO4_Fornitori_SchedePrezzi_VariantiPrezzi_Nuovi.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_DocumentiCreati.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_DocumentiRicevuti.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_ElementiOfferta_DaAggiungere.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_ElementiOrdini_DaAggiungere.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_OfferteSezioni.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_Servizi_Connessione.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Sincro_Pratiche_Servizi_Dettaglio.cs">
+      <DependentUpon>GadiItaliaEFModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="GadiItaliaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GadiItaliaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GadiItaliaModel.edmx.diagram">
+      <DependentUpon>GadiItaliaModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GadiItaliaEFModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GadiItaliaEFModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="GadiItaliaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GadiItaliaModel.edmx</DependentUpon>
+      <LastGenOutput>GadiItaliaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="GadiItaliaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GadiItaliaModel.edmx</DependentUpon>
+      <LastGenOutput>GadiItaliaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DrkCore\Drk.Core.csproj">
+      <Project>{98c3b501-05cd-40e3-9bb0-787e019f49ba}</Project>
+      <Name>Drk.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>

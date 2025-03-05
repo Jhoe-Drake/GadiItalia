@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Anteprima Fornitore</title>
+    <style>
+                body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .generaldata-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+        }
+        .group-box {
+            
+            margin: auto;
+            padding: 30px;
+            
+        }
+        .text-caption {
+            font-weight:bold
+        }
+                .header {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details th {
+            text-align: left;
+            padding: 5px;
+            background: #f5f5f5;
+        }
+
+                .details td {
+            padding: 5px;
+        }
+
+            .notes {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #555;
+        }
+
+
+    </style>
+      
+    
+</head>
+<body>
+    <div class="generaldata-box">
+        <h3>{{ ragione_sociale }}</h3>
+        <div class="group-box">
+            <div>
+                <label class="text-caption">{{ lbl_stato }} : </label>{{ stato }}
+            </div>
+            <div>   
+                <label class="text-caption">{{ lbl_condice_fornitore }} : </label>
+                <label>{{ codice_fornitore }}</label>
+
+            </div>
+            <div>
+                <label class="text-caption">{{ lbl_ragione_sociale }}: </label>
+                <label>{{ ragione_sociale }}</label>
+
+            </div>
+            <div>
+                <label class="text-caption">{{ lbl_nome_interno }}: </label>
+                <label>{{ nome_interno }}</label>
+
+
+            </div>
+            <div>
+                <label class="text-caption">{{ lbl_responsabile }}:</label>
+                <label>{{ resposabile }}</label>
+            </div>
+            <hr />
+
+            <div>
+                <label class="text-caption">{{ lbl_destinazione }}</label><br />
+                <div class="group-box">
+                    <label class="text-caption">{{ lbl_indirizzo }}:</label> <label>{{ indirizzo }}</label><br />
+                    <label class="text-caption">{{ lbl_comune }}:</label> <label>{{ city }}</label><br />
+                    <label class="text-caption">{{ lbl_cap }}:</label> <label>{{ cap }}</label><br />
+                    <label class="text-caption">{{ lbl_prov }}:</label> <label>{{ prov }}</label><br />
+                </div>
+            </div>
+
+
+        </div>
+        <hr />
+        <div class="group-box">
+            <label class="text-caption">{{lbl_images}}:</label><br />
+            <table class="details">
+
+                {{ for imm in immagini }}
+                <tr>
+                    <td class="details"><img src="{{ imm }}" width="300" height="300" />  </td>
+
+                </tr>
+                {{ end }}
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
